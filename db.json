@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "first_name": "John",
+      "last_name": "Peterson",
+      "email": "j.peterson@compuserve.com",
+      "password": "password"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Tyler",
+      "email": "marytyler@moore.com",
+      "password": "password"
+    }
+  ],
+  "agencies": [
+    {
+      "name": "Chicanos Por La Causa",
+      "abbrv": "CPLC",
+      "site": "http://www.cplc.org",
+      "email": "admin@cplc.org",
+      "password": "password",
+      "contact": {
+        "street_address": "1112 E. Buckeye Rd.",
+        "city": "Phoenix",
+        "state": "AZ",
+        "zip_code": "85034",
+        "phone": "602-257-0700"
+      },
+      "programs": [
+        {
+          "name": "CPLC Parenting Arizona",
+          "locations": [
+            {
+              "name": "Guadalupe Family Resource Center",
+              "site": "http://www.parentingaz.org/guadalupefrc",
+              "age_min": 0,
+              "age_max": 5,
+              "services": [
+                "family resource center",
+                "parenting classes"
+              ],
+              "contact": {
+                "street_address": "5840 E. Calle Santos Bravo",
+                "city": "Guadalupe",
+                "state": "AZ",
+                "zip_code": "85283",
+                "phone": "480-491-2301"
+              }
+            },
+            {
+              "name": "CPLC Parenting Arizona Phoenix",
+              "site": "http://www.parentingaz.org",
+              "age_min": 0,
+              "age_max": 18,
+              "services": [
+                "home visitation",
+                "parenting classes",
+                "parent aide services"
+              ],
+              "contact": {
+                "street_address": "6741 N. 7th St.",
+                "city": "Phoenix",
+                "state": "AZ",
+                "zip_code": "85014",
+                "phone": "602-248-0428 x221"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
