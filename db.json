@@ -1,74 +1,189 @@
 {
-  "users": [
-    {
-      "first_name": "John",
-      "last_name": "Peterson",
-      "email": "j.peterson@compuserve.com",
-      "password": "password"
-    },
-    {
-      "first_name": "Mary",
-      "last_name": "Tyler",
-      "email": "marytyler@moore.com",
-      "password": "password"
-    }
-  ],
-  "agencies": [
-    {
-      "name": "Chicanos Por La Causa",
-      "abbrv": "CPLC",
-      "site": "http://www.cplc.org",
-      "email": "admin@cplc.org",
-      "password": "password",
-      "contact": {
-        "street_address": "1112 E. Buckeye Rd.",
-        "city": "Phoenix",
-        "state": "AZ",
-        "zip_code": "85034",
-        "phone": "602-257-0700"
-      },
-      "programs": [
-        {
-          "name": "CPLC Parenting Arizona",
-          "locations": [
+  "users": 
+    [
+      {
+        "first_name": "Peter",
+        "last_name": "Griffin",
+        "email": "thefamilyguy@woah.com",
+        "password": "password",
+        "user_level":
+          [
             {
-              "name": "Guadalupe Family Resource Center",
-              "site": "http://www.parentingaz.org/guadalupefrc",
-              "age_min": 0,
-              "age_max": 5,
-              "services": [
-                "family resource center",
-                "parenting classes"
-              ],
-              "contact": {
-                "street_address": "5840 E. Calle Santos Bravo",
-                "city": "Guadalupe",
-                "state": "AZ",
-                "zip_code": "85283",
-                "phone": "480-491-2301"
-              }
-            },
-            {
-              "name": "CPLC Parenting Arizona Phoenix",
-              "site": "http://www.parentingaz.org",
-              "age_min": 0,
-              "age_max": 18,
-              "services": [
-                "home visitation",
-                "parenting classes",
-                "parent aide services"
-              ],
-              "contact": {
-                "street_address": "6741 N. 7th St.",
-                "city": "Phoenix",
-                "state": "AZ",
-                "zip_code": "85014",
-                "phone": "602-248-0428 x221"
-              }
+              "admin": false,
+              "user": true
             }
+          ],
+        "saved_resources": 
+          [
+
           ]
-        }
-      ]
-    }
-  ]
+      },
+      {
+        "first_name": "Mary",
+        "last_name": "Tyler",
+        "email": "mary.tyler@moore.com",
+        "password": "password",
+        "user_level":
+          [
+            {
+              "admin": false,
+              "user": true
+            }
+          ],
+        "saved_resources":
+          [
+
+          ]
+      },
+      {
+        "first_name": "Keith",
+        "last_name": "Wasielewski",
+        "email": "thegreatwaz@aol.com",
+        "password": "admin_password",
+        "user_level":
+          [
+            {
+              "admin": true,
+              "user": true
+            }
+          ],
+        "saved_resources":
+          [
+
+          ]
+      }
+    ],
+  "resources":
+    [
+      {
+        "name": "CPLC Parenting Arizona",
+        "subtext": "Home Visitation, Parenting Classes, and Parent Aide Services",
+        "website": "http://www.parentingaz.org",
+        "contact":
+          {
+            "street_address": "6741 N. 7th St.",
+            "city": "Phoenix",
+            "state": "AZ",
+            "zip_code": "85014",
+            "phone": "602-248-0428 x221"
+          },
+        "map": true,
+        "summary": "All Programs are offered in English and Spanish. The Home Visitation
+          program is for families with children ages birth to 3 years old. The program 
+          focuses on child health and development, parenting skills, and linkage to community
+          resources. Parenting classes are open to families with children ages birth to 18 years
+          old. The focus is on strengthening parenting skills and linkage to community resources.
+          School Choice links families with high quality schools in their area and educates 
+          families on the importance of finding the right school for their child.",
+        "services":
+          [
+            "Home Visitation",
+            "Parenting Classes",
+            "Parent Aide Services"
+          ],        
+      },
+      {
+        "name": "CPLC Parenting Arizona",
+        "subtext": "Guadalupe Family Resource Center",
+        "website": "http://www.parentingaz.org/guadalupefrc",
+        "contact":
+          {
+            "street_address": "5840 E. Calle Santos Bravo",
+            "city": "Guadalupe",
+            "state": "AZ",
+            "zip_code": "85283",
+            "phone": "480-491-2301"
+          },
+        "map": true,
+        "summary": "The Guadalupe Family Resource Center offers the following services in both
+          English and Spanish: parenting classes, monthly group socials, food box vouchers, a
+          computerlab for families to use the internet, AHCCCS Insurance assistance, Nutrition
+          Assistance, TANF assistance, WIC services, and School Choice assistance.",
+        "services":
+          [
+            "Parenting Classes",
+            "Support Services"
+          ],
+      },
+      {
+        "name": "Arizona Department of Child Safety",
+        "subtext": "Department of Child Safety (DCS)",
+        "website": "https://dcs.az.gov/",
+        "contact":
+          {
+            "street_address": "PO Box 6030, S/C C010-23",
+            "city": "Phoenix",
+            "state": "AZ",
+            "zip_code": "85005",
+            "phone": "602-255-2500"
+          },
+        "map": false,
+        "summary": "Department of Child Safety (DCS), formerly CPS, is a program mandated by
+          law whose primary purpose is to protect children who are abused and/or neglected.
+          This program provides specialized welfare services that seek to prevent, abuse and/or
+          neglect of children and address dependency issues. The Department of Child Safety
+          program receives, screens and investigates allegations of child abuse and neglect,
+          performs assessments of child safety, assesses the imminent risk of harm to the children
+          and evaluates conditions that support or refute the alleged abuse or neglect and need
+          for emergency intervention. This program also provides services designed to stabilize a
+          family in crisis and to preserve the family unit by reducing safety and risk factors.
+          This program provides an array of services, Team Decision Making, Family Preservation
+          Services (Intensive Family Services), High-Risk Infant Services and a Substance Exposed
+          Newborn Safe Environment program (in Maricopa County), case management, parent aide,
+          substance abuse assessment and treatment (Arizona Families F.I.R.S.T.) and other in-home
+          family support services. Not all programs are offered in every geographic area. In
+          addition, services to promote permanence, stability and continuity of care are provided
+          for children who enter out-of-home care. Services include, but are not limited to case
+          management, permanency planning, provision of out-of-home care, kinship foster care,
+          adoptive and foster homes.",
+        "services":
+          [
+            "Child Safety",
+            "Support Services"
+          ]
+      },
+      {
+        "name": "Arizona Department of Education",
+        "subtext": "Raising Special Kids",
+        "website": "http://www.raisingspecialkids.org/",
+        "contact":
+          {
+            "street_address": "5025 E. Washington St. #204",
+            "city": "Phoenix",
+            "state": "AZ",
+            "zip_code": "85034",
+            "phone": "602-242-4366"
+          },
+        "map": true,
+        "summary": "Raising Special Kids is a 501 (c )3 non-profit organization that provides support
+          and information for parents of children, from birth to age 26, with a full range of
+          disabilities and special health care needs. Programs are offered at no cost to families, and
+          are available in English and Spanish.",
+        "services":
+          [
+            "Special Needs"
+          ]
+      },
+      {
+        "name": "Baylight Institute for Creative Arts",
+        "subtext": "Music and Art Classes for Children and Adults",
+        "website": "http://www.baylightinstitute.com/",
+        "contact":
+          {
+            "street_address": "717 E. Southern Ave.",
+            "city": "Phoenix",
+            "state": "AZ",
+            "zip_code": "85040",
+            "phone": "602-616-7584"
+          },
+        "map": true,
+        "summary": "Offering music and art classes for children and adults, private and group, after school,
+          after work. Offering Free Community Events such as Free Music / Art Movie Night 3rd Tuesday, Free
+          Open Mic Night 2nd Friday, and Free Art / Music Demo Weekend Third Weekend of Month.",
+        "services":
+          [
+            "Creative Education"
+          ]
+      }
+    ]
 }
