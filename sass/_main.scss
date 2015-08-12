@@ -1,0 +1,13 @@
+/****************************************
+  Reset
+*****************************************/
+
+@import 'normalize';
+
+/****************************************
+  Fonts
+*****************************************/
+
+@include font-face('Kelson', font-files('./../fonts/Kelson-Sans-Regular.otf'));
+@include font-face('Kelson', font-files('./../fonts/Kelson-Sans-Bold.otf'), font-weight: bold);
+@include font-face('Kelson', font-files('././fonts/Kelson-Sans-Light.otf'), font-weight: light);
