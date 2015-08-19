@@ -9,7 +9,9 @@ var LogIn = React.createClass({
       <div>
         <Home />
         <div id="login-box">
-          <h1>Log In to view your local resources and get updates on events in your area</h1>
+          <div>
+            <h3>Log In to view your local resources and get updates on events in your area</h3>
+          </div>
           <LogInForm/>
         </div>
       </div>

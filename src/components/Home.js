@@ -10,7 +10,7 @@ var Home = React.createClass({
           <div>
             <div id="search-form">
               <h1>Local Services for Phoenix Families</h1>
-              <SearchForm />
+              <SearchForm onSubmit={this.handleSubmit} />
             </div>         
           </div>
         </section>
@@ -45,7 +45,12 @@ var Home = React.createClass({
         </section>
       </div>
     );
+  },
+
+  handleSubmit: function(e) {
+    console.log('test');
   }
+
 });
 
 module.exports = Home;

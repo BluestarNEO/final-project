@@ -9,7 +9,7 @@ var SignUp = React.createClass({
       <div>
         <Home />
         <div id="signup-box">
-          <h1>Sign up to save your local resources and get updates on events in your area</h1>
+          <h3>Sign up to save your local resources and get updates on events in your area</h3>
           <SignUpForm/>
         </div>
       </div>

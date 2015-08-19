@@ -10,6 +10,7 @@ var LogInForm = React.createClass({
         <div className="form-input">
           <input type="password" name="password" placeholder="Password" />
         </div>
+        <button>Log In</button>
       </form>
     );
   }

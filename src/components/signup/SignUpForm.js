@@ -16,6 +16,7 @@ var SignUpForm = React.createClass({
         <div className="form-input">
           <input type="password" name="password" placeholder="Password" />
         </div>
+        <button>Sign Up</button>
       </form>
     );
   }
