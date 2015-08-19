@@ -1,0 +1,12 @@
+html {
+  background-color: #c0ccdd;
+  box-sizing: border-box;
+  font-family: Kelson, Helvetica, Arial;
+  color: black;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  color: inherit;
+  font: inherit;
+}

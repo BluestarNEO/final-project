@@ -1,0 +1,34 @@
+#primary-header {
+  background-color: #FFC957;
+  color: white;
+  height: 65px;
+  position: relative;
+  z-index: 50;
+
+  > div {
+    width: 960px;
+    margin: 0 auto;
+
+    a {
+      text-decoration: none;
+    }
+
+    #logo {
+      position: absolute;
+      font-size: 45px;
+      top: -5px;
+      font-family: 'Shadows Into Light Two', Kelson, Helvetica, Arial;
+    }
+
+    #primary-nav {
+      display: inline-block;
+      float: right;
+      font-size: 25px;
+      margin-top: 20px;
+
+      a {
+        padding-right: 25px;
+      }
+    }
+  }
+}

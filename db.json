@@ -68,19 +68,13 @@
             "phone": "602-248-0428 x221"
           },
         "map": true,
-        "summary": "All Programs are offered in English and Spanish. The Home Visitation
-          program is for families with children ages birth to 3 years old. The program 
-          focuses on child health and development, parenting skills, and linkage to community
-          resources. Parenting classes are open to families with children ages birth to 18 years
-          old. The focus is on strengthening parenting skills and linkage to community resources.
-          School Choice links families with high quality schools in their area and educates 
-          families on the importance of finding the right school for their child.",
+        "summary": "All Programs are offered in English and Spanish. The Home Visitation program is for families with children ages birth to 3 years old. The program focuses on child health and development, parenting skills, and linkage to community resources. Parenting classes are open to families with children ages birth to 18 years old. The focus is on strengthening parenting skills and linkage to community resources. School Choice links families with high quality schools in their area and educates families on the importance of finding the right school for their child.",
         "services":
           [
             "Home Visitation",
             "Parenting Classes",
             "Parent Aide Services"
-          ],        
+          ]        
       },
       {
         "name": "CPLC Parenting Arizona",
@@ -95,15 +89,12 @@
             "phone": "480-491-2301"
           },
         "map": true,
-        "summary": "The Guadalupe Family Resource Center offers the following services in both
-          English and Spanish: parenting classes, monthly group socials, food box vouchers, a
-          computerlab for families to use the internet, AHCCCS Insurance assistance, Nutrition
-          Assistance, TANF assistance, WIC services, and School Choice assistance.",
+        "summary": "The Guadalupe Family Resource Center offers the following services in both English and Spanish: parenting classes, monthly group socials, food box vouchers, a computerlab for families to use the internet, AHCCCS Insurance assistance, Nutrition Assistance, TANF assistance, WIC services, and School Choice assistance.",
         "services":
           [
             "Parenting Classes",
             "Support Services"
-          ],
+          ]
       },
       {
         "name": "Arizona Department of Child Safety",
@@ -118,24 +109,7 @@
             "phone": "602-255-2500"
           },
         "map": false,
-        "summary": "Department of Child Safety (DCS), formerly CPS, is a program mandated by
-          law whose primary purpose is to protect children who are abused and/or neglected.
-          This program provides specialized welfare services that seek to prevent, abuse and/or
-          neglect of children and address dependency issues. The Department of Child Safety
-          program receives, screens and investigates allegations of child abuse and neglect,
-          performs assessments of child safety, assesses the imminent risk of harm to the children
-          and evaluates conditions that support or refute the alleged abuse or neglect and need
-          for emergency intervention. This program also provides services designed to stabilize a
-          family in crisis and to preserve the family unit by reducing safety and risk factors.
-          This program provides an array of services, Team Decision Making, Family Preservation
-          Services (Intensive Family Services), High-Risk Infant Services and a Substance Exposed
-          Newborn Safe Environment program (in Maricopa County), case management, parent aide,
-          substance abuse assessment and treatment (Arizona Families F.I.R.S.T.) and other in-home
-          family support services. Not all programs are offered in every geographic area. In
-          addition, services to promote permanence, stability and continuity of care are provided
-          for children who enter out-of-home care. Services include, but are not limited to case
-          management, permanency planning, provision of out-of-home care, kinship foster care,
-          adoptive and foster homes.",
+        "summary": "Department of Child Safety (DCS), formerly CPS, is a program mandated by law whose primary purpose is to protect children who are abused and/or neglected. This program provides specialized welfare services that seek to prevent, abuse and/or neglect of children and address dependency issues. The Department of Child Safety program receives, screens and investigates allegations of child abuse and neglect, performs assessments of child safety, assesses the imminent risk of harm to the children and evaluates conditions that support or refute the alleged abuse or neglect and need for emergency intervention. This program also provides services designed to stabilize a family in crisis and to preserve the family unit by reducing safety and risk factors. This program provides an array of services, Team Decision Making, Family Preservation Services (Intensive Family Services), High-Risk Infant Services and a Substance Exposed Newborn Safe Environment program (in Maricopa County), case management, parent aide, substance abuse assessment and treatment (Arizona Families F.I.R.S.T.) and other in-home family support services. Not all programs are offered in every geographic area. In addition, services to promote permanence, stability and continuity of care are provided for children who enter out-of-home care. Services include, but are not limited to case management, permanency planning, provision of out-of-home care, kinship foster care, adoptive and foster homes.",
         "services":
           [
             "Child Safety",
@@ -155,10 +129,7 @@
             "phone": "602-242-4366"
           },
         "map": true,
-        "summary": "Raising Special Kids is a 501 (c )3 non-profit organization that provides support
-          and information for parents of children, from birth to age 26, with a full range of
-          disabilities and special health care needs. Programs are offered at no cost to families, and
-          are available in English and Spanish.",
+        "summary": "Raising Special Kids is a 501 (c )3 non-profit organization that provides support and information for parents of children, from birth to age 26, with a full range of disabilities and special health care needs. Programs are offered at no cost to families, and are available in English and Spanish.",
         "services":
           [
             "Special Needs"
@@ -177,9 +148,7 @@
             "phone": "602-616-7584"
           },
         "map": true,
-        "summary": "Offering music and art classes for children and adults, private and group, after school,
-          after work. Offering Free Community Events such as Free Music / Art Movie Night 3rd Tuesday, Free
-          Open Mic Night 2nd Friday, and Free Art / Music Demo Weekend Third Weekend of Month.",
+        "summary": "Offering music and art classes for children and adults, private and group, after school, after work. Offering Free Community Events such as Free Music / Art Movie Night 3rd Tuesday, Free Open Mic Night 2nd Friday, and Free Art / Music Demo Weekend Third Weekend of Month.",
         "services":
           [
             "Creative Education"

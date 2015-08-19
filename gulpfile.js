@@ -7,22 +7,19 @@ var
   browserify = require('browserify'),
   rimraf     = require('rimraf'),
   jsonServer = require('json-server'),
+  reactify   = require('reactify'),
   apiServer  = jsonServer.create(),
   router     = jsonServer.router('db.json'),
   serve      = require('gulp-serve'),
   sass       = require('gulp-sass');
 
-/****************************************
-  JS
-*****************************************/
-
+// JS
 var bundler = browserify({
   entries: ['./src/app.js'],
   debug: true
 });
 
-// output builds log to terminal
-bundler.on('log', gutil.log);
+bundler.on('log', gutil.log); // Output builds log to terminal
 
 gulp.task('clean', function(cb){
   rimraf('build', cb);
@@ -35,10 +32,7 @@ gulp.task('build', ['clean'], function() {
     .pipe(gulp.dest('build'));
 });
 
-/****************************************
-  Sass
-*****************************************/
-
+// Sass
 gulp.task('sass', function() {
   return gulp.src('./sass/*.scss')
     .pipe(sass()
@@ -46,10 +40,7 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./css'));
 });
 
-/****************************************
-  Servers (Web and API)
-*****************************************/
-
+// Servers (Web and API)
 apiServer.use(jsonServer.defaults);
 apiServer.use(router);
 
@@ -64,9 +55,7 @@ gulp.task('serve:web', ['serve:api'], serve({
 
 gulp.task('serve', ['serve:api', 'serve:web']);
 
-/****************************************
-  Watch
-*****************************************/
+// Watch
 
 gulp.task('watch', ['build'], function () {
   gulp.watch(['src/**/*.js', 'src/**/*.hbs'], ['build']);
