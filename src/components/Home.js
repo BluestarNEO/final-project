@@ -10,7 +10,9 @@ var Home = React.createClass({
           <div>
             <div id="search-form">
               <h1>Local Services for Phoenix Families</h1>
+              <p className="search-form-subtext">Select any number of services and search your zipcode</p>           
               <SearchForm onSubmit={this.handleSubmit} />
+              <p className="search-form-subtext">Or choose to select <a href="#">all services</a></p>
             </div>         
           </div>
         </section>
@@ -25,7 +27,7 @@ var Home = React.createClass({
                   <i className="fa fa-search-plus"></i>
                 </div>
                 <div>
-                  <h2><strong>Search for Local Family Services</strong></h2>
+                  <h4><strong>Search for Local Family Services</strong></h4>
                   <p>Filter the services that you need and locate those results 
                   that are closest to you!</p>
                 </div>
@@ -35,7 +37,7 @@ var Home = React.createClass({
                   <i className="fa fa-user-plus"></i>
                 </div>
                 <div>
-                  <h2><strong>Sign Up and Build a Profile</strong></h2>
+                  <h4><strong>Sign Up and Build a Profile</strong></h4>
                   <p>Sign up and create a simple profile. Then save local resources 
                   close to you for easy access info!</p>
                 </div>
@@ -48,9 +50,8 @@ var Home = React.createClass({
   },
 
   handleSubmit: function(e) {
-    console.log('test');
+    e.preventDefault();
   }
-
 });
 
 module.exports = Home;

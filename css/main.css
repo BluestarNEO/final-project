@@ -2403,19 +2403,32 @@ th {
   Defaults
 *****************************************/
 html {
-  background-color: #c0ccdd;
+  background-color: #e6ebf2;
   box-sizing: border-box;
   font-family: Kelson, Helvetica, Arial;
   color: black; }
+
+h2 {
+  font-size: 30px; }
 
 h3 {
   font-size: 25px;
   margin-bottom: 0; }
 
+h4 {
+  font-size: 15px; }
+
 *, *::before, *::after {
   box-sizing: inherit;
   color: inherit;
   font: inherit; }
+
+input {
+  padding-left: 10px;
+  transition: outline 0.8s; }
+
+select {
+  padding-left: 10px; }
 
 /****************************************
   Primary Header
@@ -2440,15 +2453,22 @@ h3 {
       display: inline-block;
       float: right;
       font-size: 25px;
-      margin-top: 20px; }
+      line-height: 65px; }
       #primary-header > div #primary-nav a {
-        padding-right: 25px; }
+        display: inline-block;
+        padding-right: 5px;
+        padding-left: 5px;
+        margin-right: 15px;
+        line-height: 65px; }
+        #primary-header > div #primary-nav a:hover {
+          background-color: #EAAE30;
+          transition: background-color 1s; }
 
 /****************************************
   Home Page
 *****************************************/
 #hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/phxfamily.png);
+  background: radial-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.45)), url(../images/phxfamily.png);
   height: 650px;
   background-size: cover;
   position: relative; }
@@ -2459,7 +2479,7 @@ h3 {
     #hero-section > div #search-form {
       width: 750px;
       height: 250px;
-      background-color: rgba(255, 201, 87, 0.75);
+      background-color: rgba(255, 201, 87, 0.85);
       display: inline-block;
       position: relative;
       top: 200px;
@@ -2467,10 +2487,11 @@ h3 {
       vertical-align: bottom; }
       #hero-section > div #search-form h1 {
         color: white;
-        margin: 35px 0 0 0; }
+        margin: 35px 0 0 0;
+        font-size: 35px; }
       #hero-section > div #search-form > form {
         font-size: 25px;
-        margin-top: 35px;
+        margin-top: 25px;
         font-family: 'Open Sans', Arial; }
         #hero-section > div #search-form > form input {
           margin-left: 15px;
@@ -2481,17 +2502,32 @@ h3 {
           -webkit-appearance: none;
           height: 50px;
           border: none;
-          box-shadow: 0 0 12px -5px #000; }
+          box-shadow: 0 0 12px -5px #000;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          color: #a9a9a9; }
         #hero-section > div #search-form > form button {
-          width: 40px;
+          width: 50px;
           height: 50px;
-          background-color: green;
+          background-color: #43af43;
           border: none;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
           color: white;
-          box-shadow: 0 0 12px -5px #000; }
+          box-shadow: 0 0 12px -5px #000;
+          border-top: transparent solid 1px; }
+      #hero-section > div #search-form .search-form-subtext {
+        margin-top: 5px;
+        color: white;
+        font-size: 20px; }
+        #hero-section > div #search-form .search-form-subtext a {
+          color: #43af43; }
+      #hero-section > div #search-form p:last-child {
+        padding-top: 15px; }
 
 #info-section {
-  position: relative; }
+  position: relative;
+  color: #7D7D7D; }
   #info-section > div {
     width: 960px;
     margin: 0 auto;
@@ -2506,7 +2542,7 @@ h3 {
       margin-right: 100px; }
     #info-section #primary-info #profile-info {
       margin-left: 50px; }
-    #info-section #primary-info h2 {
+    #info-section #primary-info h4 {
       margin: 0; }
     #info-section #primary-info p {
       text-align: left; }
@@ -2526,9 +2562,106 @@ h3 {
 *****************************************/
 #map {
   width: 960px;
-  height: 500px;
+  height: 450px;
   margin: 0 auto;
   position: relative; }
+
+#map-info-container {
+  width: 960px;
+  min-height: 400px;
+  margin: 0 auto;
+  margin-top: 55px;
+  margin-bottom: 15px; }
+  #map-info-container #info-box {
+    width: 930px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: auto; }
+
+#user-profile {
+  position: relative;
+  min-height: 600px;
+  color: #4A4949; }
+  #user-profile > div {
+    width: 960px;
+    margin: 0 auto; }
+    #user-profile > div .section-name {
+      text-align: center;
+      margin-bottom: 10px; }
+  #user-profile #user-info {
+    float: left;
+    margin: 0 5px 0 5px; }
+  #user-profile #profile-info #edit-btn {
+    font-family: 'Open Sans', Helvetica, Arial;
+    height: 40px;
+    margin-top: 5px;
+    font-size: 20px;
+    width: 150px;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    background-color: #ff5d55;
+    text-align: center;
+    padding-top: 5px; }
+    #user-profile #profile-info #edit-btn a {
+      text-decoration: none; }
+    #user-profile #profile-info #edit-btn:hover {
+      background-color: #BF1A11;
+      transition: background-color 0.4s;
+      cursor: pointer; }
+
+#edit-box {
+  width: 700px;
+  min-height: 300px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  border-radius: 5px;
+  border: #a9a9a9 solid 5px;
+  box-shadow: 0 0 14px -2px #000;
+  text-align: center; }
+  #edit-box > div h3 {
+    margin-left: 20px;
+    margin-right: 20px; }
+  #edit-box .form-label {
+    font-size: 20px;
+    display: block;
+    float: left;
+    text-align: right;
+    width: 250px;
+    padding-top: 25px;
+    padding-right: 15px; }
+  #edit-box .form-input {
+    text-align: left; }
+  #edit-box input, #edit-box button {
+    font-family: 'Open Sans', Helvetica, Arial;
+    height: 40px;
+    margin-top: 15px;
+    font-size: 20px; }
+  #edit-box input {
+    width: 275px; }
+  #edit-box button {
+    width: 200px;
+    color: white;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    border: none;
+    background-color: #3d8af7; }
+    #edit-box button:hover {
+      background-color: #0563E5;
+      transition: background-color 0.4s; }
+  #edit-box h3 {
+    padding-left: 20px;
+    padding-right: 20px; }
+  #edit-box .cancel-btn {
+    background-color: #ff5d55;
+    margin-left: 10px; }
+    #edit-box .cancel-btn:hover {
+      background-color: #0563E5;
+      transition: background-color 0.4s; }
 
 /****************************************
   Primary Footer
@@ -2549,7 +2682,7 @@ h3 {
       padding-top: 20px; }
     #primary-footer > div > div:nth-child(2) {
       float: right;
-      padding-top: 15px; }
+      padding-top: 13px; }
       #primary-footer > div > div:nth-child(2) #nav-footer {
         font-size: 40px; }
         #primary-footer > div > div:nth-child(2) #nav-footer a {
@@ -2582,8 +2715,7 @@ h3 {
     margin-top: 15px;
     font-size: 20px; }
   #signup-box input, #login-box input {
-    width: 275px;
-    transition: outline 0.8s; }
+    width: 275px; }
   #signup-box button, #login-box button {
     width: 200px;
     color: white;

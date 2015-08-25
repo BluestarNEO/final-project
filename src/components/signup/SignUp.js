@@ -1,7 +1,9 @@
 var 
   React      = require('react'),
   Home       = require('./../Home'),
-  SignUpForm = require('./SignUpForm');
+  SignUpForm = require('./SignUpForm'),
+  $          = require('jquery'),
+  _          = require('lodash');
 
 var SignUp = React.createClass({
   render: function() {

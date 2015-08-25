@@ -1,0 +1,47 @@
+#user-profile {
+  position: relative;
+  min-height: 600px;
+  color: #4A4949;
+
+  > div {
+  width: 960px;
+  margin: 0 auto;
+
+    .section-name {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+  
+  #user-info {
+    float: left;
+    margin: 0 5px 0 5px;
+  }
+
+  #profile-info {
+
+    #edit-btn {
+    font-family: 'Open Sans', Helvetica, Arial;
+    height: 40px;
+    margin-top: 5px;
+    font-size: 20px;
+    width: 150px;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    background-color: #ff5d55;
+    text-align: center;
+    padding-top: 5px;
+
+      a {
+        text-decoration: none;
+      }
+
+      &:hover {
+        background-color: #BF1A11;
+        transition: background-color .4s;
+        cursor: pointer;
+      }
+    }
+  }
+}

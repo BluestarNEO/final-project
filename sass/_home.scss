@@ -1,5 +1,5 @@
 #hero-section{
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../images/phxfamily.png);
+  background: radial-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.45)), url(../images/phxfamily.png);
   height: 650px;
   background-size: cover;
   position: relative;
@@ -12,7 +12,7 @@
     #search-form {
       width: 750px;
       height: 250px;
-      background-color: rgba(255, 201, 87, 0.75);
+      background-color: rgba(255, 201, 87, 0.85);
       display: inline-block;
       position: relative;
       top: 200px;
@@ -22,11 +22,12 @@
       h1 {
         color: white;
         margin: 35px 0 0 0;
+        font-size: 35px;
       }
 
       > form {
         font-size: 25px;
-        margin-top: 35px;
+        margin-top: 25px;
         font-family: 'Open Sans', Arial;
 
         input {
@@ -41,23 +42,44 @@
           height: 50px;
           border: none;
           box-shadow: 0 0 12px -5px #000;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          color: #a9a9a9;
         }
 
         button {
-          width: 40px;
+          width: 50px;
           height: 50px;
-          background-color: green;
+          background-color: #43af43;
           border: none;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
           color: white;
           box-shadow: 0 0 12px -5px #000;
+          border-top: transparent solid 1px;
         }
       }
+
+      .search-form-subtext {
+        margin-top: 5px;
+        color: white;
+        font-size: 20px;
+
+        a {
+          color: #43af43;
+        }
+      }
+
+      p:last-child {
+          padding-top: 15px;
+        }
     }
   }
 }
 
 #info-section {
   position: relative;
+  color: #7D7D7D;
 
   > div {
       width: 960px;
@@ -82,7 +104,7 @@
       margin-left: 50px;
     }
 
-    h2 {
+    h4 {
       margin: 0;
     }
 

@@ -1,6 +1,22 @@
 #map {
   width: 960px;
-  height: 500px;
+  height: 450px;
   margin: 0 auto;
   position: relative;
+}
+
+#map-info-container {
+  width: 960px;
+  min-height: 400px;
+  margin: 0 auto;
+  margin-top: 55px;
+  margin-bottom: 15px;
+
+  #info-box {
+    width: 930px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: auto;
+
+  } 
 }
