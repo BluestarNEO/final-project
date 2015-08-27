@@ -46,8 +46,12 @@ UserProfile = React.createClass({
           <div>
             <h1 className="section-name">USER PROFILE</h1>
             <hr />
-            <UserProfileLeft userId={id} user={this.state.user} id="user-info" />
-            <UserProfileRight />
+            <div id="user-info">
+              <UserProfileLeft userId={id} user={this.state.user} id="user-info" />
+            </div>
+            <div id="user-resources">
+              <UserProfileRight userId={id} user={this.state.user} id="user-resources" />
+            </div>
           </div>
         </div>
       </div>

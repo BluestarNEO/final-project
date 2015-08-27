@@ -1,5 +1,5 @@
 #primary-header {
-  background-color: #FFC957;
+  background-color: $basicYellow;
   color: white;
   height: 65px;
   position: relative;
@@ -29,12 +29,14 @@
       a {
         display: inline-block;
         padding-right: 5px;
-        padding-left: 5px;
+        padding-left: 7px;
         margin-right: 15px;
+        margin-bottom: 0;
         line-height: 65px;
+        transition: background-color 1s;
 
         &:hover {
-          background-color: #EAAE30;
+          background-color: $lighterYellow;
           transition: background-color 1s;
         }
       }

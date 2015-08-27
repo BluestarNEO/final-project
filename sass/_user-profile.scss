@@ -1,6 +1,6 @@
 #user-profile {
   position: relative;
-  min-height: 600px;
+  min-height: 700px;
   color: #4A4949;
 
   > div {
@@ -19,6 +19,17 @@
   }
 
   #profile-info {
+    width: 500px;
+
+    .profile-label {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .profile-value {
+      margin-top: 0;
+    }
 
     #edit-btn {
     font-family: 'Open Sans', Helvetica, Arial;
@@ -29,18 +40,55 @@
     color: white;
     border-radius: 4px;
     border: none;
-    background-color: #ff5d55;
+    background-color: $basicRed;
     text-align: center;
     padding-top: 5px;
-
-      a {
-        text-decoration: none;
-      }
+    text-decoration: none;
+    display: block;
+    transition: background-color .4s;
 
       &:hover {
-        background-color: #BF1A11;
+        background-color: $darkerRed;
         transition: background-color .4s;
         cursor: pointer;
+      }
+    }
+  }
+
+  #user-resources {
+    float: left;
+    width: 450px;
+
+    .resource-info {
+      background-color: #FCFCFD;
+      border: 1px #C0CCDC solid;
+      border-radius: 5px;
+      width: 450px;
+      margin-top: 10px;
+      padding-left: 15px;
+      box-shadow: 0 0 10px -5px #000;
+
+      h4 {
+        margin-bottom: 10px;
+
+        a {
+          text-decoration: none;
+
+          &:hover {
+            color: $basicBlue;
+          }
+        }
+      }
+
+      .delete-icon {
+        color: $basicRed;
+        margin-left: 415px;
+
+        &:hover {
+          color: $darkerRed;
+          transition: color .4s;
+          cursor: pointer;
+        }
       }
     }
   }

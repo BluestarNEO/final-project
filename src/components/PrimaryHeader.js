@@ -6,7 +6,7 @@ var PrimaryHeader = React.createClass({
       var userUrl = '/#/user/' + User.id
 
       return (
-        <a href={userUrl}>Welcome, {User.first_name}!</a>
+        <a href={userUrl}>Welcome, {User.first_name}</a>
       );
     } else {
       return (

@@ -14,7 +14,13 @@ var MapInfo = React.createClass({
           <Resource
             key={index}
             name={resource.name}
-            subtext={resource.subtext} />
+            subtext={resource.subtext}
+            website={resource.website}
+            summary={resource.summary} 
+            services={resource.services}
+            address={resource.contact.street_address + ' ' + resource.contact.city + ', ' + resource.contact.state + ' ' + resource.contact.zip_code}
+            phone={resource.contact.phone}
+          />
         );
       });
     }

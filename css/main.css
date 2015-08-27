@@ -2406,7 +2406,8 @@ html {
   background-color: #e6ebf2;
   box-sizing: border-box;
   font-family: Kelson, Helvetica, Arial;
-  color: black; }
+  color: black;
+  letter-spacing: 1px; }
 
 h2 {
   font-size: 30px; }
@@ -2434,7 +2435,7 @@ select {
   Primary Header
 *****************************************/
 #primary-header {
-  background-color: #FFC957;
+  background-color: #EAAE30;
   color: white;
   height: 65px;
   position: relative;
@@ -2457,18 +2458,20 @@ select {
       #primary-header > div #primary-nav a {
         display: inline-block;
         padding-right: 5px;
-        padding-left: 5px;
+        padding-left: 7px;
         margin-right: 15px;
-        line-height: 65px; }
+        margin-bottom: 0;
+        line-height: 65px;
+        transition: background-color 1s; }
         #primary-header > div #primary-nav a:hover {
-          background-color: #EAAE30;
+          background-color: #FFC957;
           transition: background-color 1s; }
 
 /****************************************
   Home Page
 *****************************************/
 #hero-section {
-  background: radial-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.45)), url(../images/phxfamily.png);
+  background: radial-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.45)), url(../images/phxfamily2.png);
   height: 650px;
   background-size: cover;
   position: relative; }
@@ -2479,7 +2482,7 @@ select {
     #hero-section > div #search-form {
       width: 750px;
       height: 250px;
-      background-color: rgba(255, 201, 87, 0.85);
+      background-color: rgba(234, 174, 48, 0.85);
       display: inline-block;
       position: relative;
       top: 200px;
@@ -2515,13 +2518,21 @@ select {
           border-bottom-right-radius: 5px;
           color: white;
           box-shadow: 0 0 12px -5px #000;
-          border-top: transparent solid 1px; }
+          border-top: transparent solid 1px;
+          transition: background-color 0.4s; }
+          #hero-section > div #search-form > form button:hover {
+            background-color: #107910;
+            transition: background-color 0.4s; }
       #hero-section > div #search-form .search-form-subtext {
         margin-top: 5px;
         color: white;
         font-size: 20px; }
         #hero-section > div #search-form .search-form-subtext a {
-          color: #43af43; }
+          color: #CAF0CA;
+          transition: color 0.4s; }
+          #hero-section > div #search-form .search-form-subtext a:hover {
+            transition: color 0.4s;
+            color: #A0E0A0; }
       #hero-section > div #search-form p:last-child {
         padding-top: 15px; }
 
@@ -2562,9 +2573,11 @@ select {
 *****************************************/
 #map {
   width: 960px;
-  height: 450px;
+  height: 350px;
   margin: 0 auto;
   position: relative; }
+  #map .tooltip-name {
+    margin-bottom: 0; }
 
 #map-info-container {
   width: 960px;
@@ -2574,13 +2587,51 @@ select {
   margin-bottom: 15px; }
   #map-info-container #info-box {
     width: 930px;
-    height: 500px;
+    height: 600px;
     margin: 0 auto;
     overflow: auto; }
+    #map-info-container #info-box .main-title {
+      margin: 0; }
+    #map-info-container #info-box .subtext {
+      margin-top: 0;
+      color: #3d8af7; }
+    #map-info-container #info-box .info-label {
+      margin-top: 0; }
+    #map-info-container #info-box .website {
+      text-decoration: none;
+      font-size: 25px; }
+      #map-info-container #info-box .website:hover {
+        color: #3d8af7; }
+    #map-info-container #info-box .summary {
+      font-size: 20px;
+      line-height: 150%;
+      text-align: justify;
+      padding-right: 10px; }
+    #map-info-container #info-box .text-light {
+      font-size: 20px; }
+    #map-info-container #info-box .subscribe {
+      font-family: 'Open Sans', Helvetica, Arial;
+      height: 40px;
+      margin-top: 5px;
+      font-size: 20px;
+      width: 150px;
+      color: white;
+      border-radius: 4px;
+      border: none;
+      background-color: #43af43;
+      text-align: center;
+      padding-top: 5px;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.4s; }
+      #map-info-container #info-box .subscribe:hover {
+        background-color: #107910;
+        transition: background-color 0.4s;
+        cursor: pointer; }
 
 #user-profile {
   position: relative;
-  min-height: 600px;
+  min-height: 700px;
   color: #4A4949; }
   #user-profile > div {
     width: 960px;
@@ -2591,24 +2642,57 @@ select {
   #user-profile #user-info {
     float: left;
     margin: 0 5px 0 5px; }
-  #user-profile #profile-info #edit-btn {
-    font-family: 'Open Sans', Helvetica, Arial;
-    height: 40px;
-    margin-top: 5px;
-    font-size: 20px;
-    width: 150px;
-    color: white;
-    border-radius: 4px;
-    border: none;
-    background-color: #ff5d55;
-    text-align: center;
-    padding-top: 5px; }
-    #user-profile #profile-info #edit-btn a {
-      text-decoration: none; }
-    #user-profile #profile-info #edit-btn:hover {
-      background-color: #BF1A11;
-      transition: background-color 0.4s;
-      cursor: pointer; }
+  #user-profile #profile-info {
+    width: 500px; }
+    #user-profile #profile-info .profile-label {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px; }
+    #user-profile #profile-info .profile-value {
+      margin-top: 0; }
+    #user-profile #profile-info #edit-btn {
+      font-family: 'Open Sans', Helvetica, Arial;
+      height: 40px;
+      margin-top: 5px;
+      font-size: 20px;
+      width: 150px;
+      color: white;
+      border-radius: 4px;
+      border: none;
+      background-color: #ff5d55;
+      text-align: center;
+      padding-top: 5px;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.4s; }
+      #user-profile #profile-info #edit-btn:hover {
+        background-color: #BF1A11;
+        transition: background-color 0.4s;
+        cursor: pointer; }
+  #user-profile #user-resources {
+    float: left;
+    width: 450px; }
+    #user-profile #user-resources .resource-info {
+      background-color: #FCFCFD;
+      border: 1px #C0CCDC solid;
+      border-radius: 5px;
+      width: 450px;
+      margin-top: 10px;
+      padding-left: 15px;
+      box-shadow: 0 0 10px -5px #000; }
+      #user-profile #user-resources .resource-info h4 {
+        margin-bottom: 10px; }
+        #user-profile #user-resources .resource-info h4 a {
+          text-decoration: none; }
+          #user-profile #user-resources .resource-info h4 a:hover {
+            color: #3d8af7; }
+      #user-profile #user-resources .resource-info .delete-icon {
+        color: #ff5d55;
+        margin-left: 415px; }
+        #user-profile #user-resources .resource-info .delete-icon:hover {
+          color: #BF1A11;
+          transition: color 0.4s;
+          cursor: pointer; }
 
 #edit-box {
   width: 700px;
@@ -2660,7 +2744,7 @@ select {
     background-color: #ff5d55;
     margin-left: 10px; }
     #edit-box .cancel-btn:hover {
-      background-color: #0563E5;
+      background-color: #BF1A11;
       transition: background-color 0.4s; }
 
 /****************************************
@@ -2668,7 +2752,7 @@ select {
 *****************************************/
 #primary-footer {
   height: 65px;
-  background-color: #FFC957;
+  background-color: #EAAE30;
   position: relative;
   color: white; }
   #primary-footer > div {
@@ -2722,7 +2806,8 @@ select {
     margin-bottom: 25px;
     border-radius: 4px;
     border: none;
-    background-color: #3d8af7; }
+    background-color: #3d8af7;
+    transition: background-color 0.4s; }
     #signup-box button:hover, #login-box button:hover {
       background-color: #0563E5;
       transition: background-color 0.4s; }

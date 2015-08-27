@@ -15,7 +15,7 @@ var
 
 // JS
 var bundler = browserify({
-  entries: ['./src/app.js'],
+  entries: ['./src/app.js', './src/main.js'],
   debug: true
 });
 

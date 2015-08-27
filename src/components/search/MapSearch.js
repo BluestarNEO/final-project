@@ -39,7 +39,12 @@ var MapSearch = React.createClass({
                   lat: latlng.lat(),
                   lng: latlng.lng(),
                   infoWindow: {
-                    content: '<h1>' + resource.name + '</h1>'                    
+                    content:
+                    '<p>' + '<h1 class="tooltip-name">' + resource.name + '</h1>' + '<br>'
+                    + address + '<br>'
+                    + resource.contact.phone + '<br>' 
+                    + 'Services: ' + resource.services.join(' | ') + '</p>'
+
                   }
                 });
               }
@@ -51,6 +56,8 @@ var MapSearch = React.createClass({
 
   render: function() {
     console.log('resource: ' + this.state.resource);
+    console.log('user: ' + User.first_name)
+
     return (
       <div>
         <div id="map">

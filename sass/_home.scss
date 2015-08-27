@@ -1,5 +1,5 @@
 #hero-section{
-  background: radial-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.45)), url(../images/phxfamily.png);
+  background: radial-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.45)), url(../images/phxfamily2.png);
   height: 650px;
   background-size: cover;
   position: relative;
@@ -12,7 +12,7 @@
     #search-form {
       width: 750px;
       height: 250px;
-      background-color: rgba(255, 201, 87, 0.85);
+      background-color: rgba(234, 174, 48, 0.85);
       display: inline-block;
       position: relative;
       top: 200px;
@@ -50,13 +50,19 @@
         button {
           width: 50px;
           height: 50px;
-          background-color: #43af43;
+          background-color: $basicGreen;
           border: none;
           border-top-right-radius: 5px;
           border-bottom-right-radius: 5px;
           color: white;
           box-shadow: 0 0 12px -5px #000;
           border-top: transparent solid 1px;
+          transition: background-color .4s;
+
+          &:hover {
+            background-color: $darkerGreen;
+            transition: background-color .4s;
+          }
         }
       }
 
@@ -66,7 +72,13 @@
         font-size: 20px;
 
         a {
-          color: #43af43;
+          color: #CAF0CA;
+          transition: color .4s;
+
+          &:hover {
+            transition: color .4s;
+            color: #A0E0A0;
+          }
         }
       }
 
@@ -118,12 +130,12 @@
       height: 100px;
 
       &.search-icon {
-        color: #3d8af7;
+        color: $basicBlue;
         padding-right: 10px;
       }
 
       &.profile-icon {
-        color: #ff5d55;
+        color: $basicRed;
         padding-right: 10px;
       }
 

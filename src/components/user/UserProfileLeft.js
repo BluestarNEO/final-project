@@ -18,13 +18,15 @@ var UserProfileLeft = React.createClass({
     return(
       <div>
         <div id="profile-info">
-          <h2>First Name: {firstName}</h2>
-          <h2>Last Name: {lastName}</h2>
-          <h2>Email: {email}</h2>
-          <h2>Password: {password}</h2>
-          <div id="edit-btn">
-            <a href={editUrl}>Edit Info</a>
-          </div>
+          <h2 className="profile-label">First Name</h2>
+          <h2 className="profile-value">{firstName}</h2>
+          <h2 className="profile-label">Last Name</h2>
+          <h2 className="profile-value">{lastName}</h2>
+          <h2 className="profile-label">Email</h2>
+          <h2 className="profile-value">{email}</h2>
+          <h2 className="profile-label">Password</h2>
+          <h2 className="profile-value">{password}</h2>
+          <a href={editUrl} id="edit-btn">Edit Info</a>
         </div>
       </div>
     );

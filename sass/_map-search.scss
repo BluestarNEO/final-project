@@ -1,8 +1,12 @@
 #map {
   width: 960px;
-  height: 450px;
+  height: 350px;
   margin: 0 auto;
   position: relative;
+
+  .tooltip-name {
+    margin-bottom: 0;
+  }
 }
 
 #map-info-container {
@@ -14,9 +18,65 @@
 
   #info-box {
     width: 930px;
-    height: 500px;
+    height: 600px;
     margin: 0 auto;
     overflow: auto;
+
+    .main-title {
+      margin: 0;
+    }
+
+    .subtext{
+      margin-top: 0;
+      color: $basicBlue; 
+    }
+
+    .info-label {
+      margin-top: 0;
+    }
+
+    .website {
+      text-decoration: none;
+      font-size: 25px;
+
+      &:hover {
+        color: $basicBlue;
+      }
+    }
+
+    .summary {
+      font-size: 20px;
+      line-height: 150%;
+      text-align: justify;
+      padding-right: 10px;
+    }
+
+    .text-light {
+      font-size: 20px;
+    }
+
+    .subscribe {
+      font-family: 'Open Sans', Helvetica, Arial;
+      height: 40px;
+      margin-top: 5px;
+      font-size: 20px;
+      width: 150px;
+      color: white;
+      border-radius: 4px;
+      border: none;
+      background-color: $basicGreen;
+      text-align: center;
+      padding-top: 5px;
+      text-decoration: none;
+      display: block;
+      transition: background-color .4s;
+
+      &:hover {
+        background-color: $darkerGreen;
+        transition: background-color .4s;
+        cursor: pointer;
+      }
+    }
 
   } 
 }

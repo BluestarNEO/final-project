@@ -26,13 +26,13 @@ var SearchForm = React.createClass({
     });
 
     return (
-      <form action="/#/map-search">
+      <form action="http://localhost:8000/map-search">
         <select id="service">
-          <option value='' defaultValue>Select a Service...</option>
+          <option value='' className="first-option" defaultValue>Select a Service...</option>
           {options}
         </select>
         <input type="text" placeholder="Zip Code" id="zipcode" className="input-field"/>
-        <button type="submit"><i className="fa fa-search"></i></button>
+        <button type="button" className="search-btn"><a href="/#/map-search"><i className="fa fa-search"></i></a></button>
       </form>
     );
   }

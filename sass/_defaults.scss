@@ -1,8 +1,24 @@
+$mainFont: Kelson;
+$basicBlue: #3d8af7;
+$darkerBlue: #0563E5;
+$basicRed: #ff5d55;
+$darkerRed: #BF1A11;
+$basicGreen: #43af43;
+$darkerGreen: #107910;
+$lighterYellow: #FFC957
+$basicYellow: #EAAE30;
+
 html {
   background-color: #e6ebf2;
   box-sizing: border-box;
-  font-family: Kelson, Helvetica, Arial;
+  font-family: $mainFont, Helvetica, Arial;
   color: black;
+
+  @if $mainFont == Kelson {
+    letter-spacing: 1px;
+  } @else {
+    letter-spacing: normal;
+  }
 }
 
 h2 {

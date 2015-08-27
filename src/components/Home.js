@@ -12,7 +12,7 @@ var Home = React.createClass({
               <h1>Local Services for Phoenix Families</h1>
               <p className="search-form-subtext">Select any number of services and search your zipcode</p>           
               <SearchForm onSubmit={this.handleSubmit} />
-              <p className="search-form-subtext">Or choose to select <a href="#">all services</a></p>
+              <p className="search-form-subtext">Or choose to select <a href="#/map-search">all services</a></p>
             </div>         
           </div>
         </section>
