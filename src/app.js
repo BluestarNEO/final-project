@@ -20,6 +20,7 @@ var routes = (
     <Route name="signup" handler={SignUp} />
     <Route name="login" handler={LogIn} />
     <Route name="map-search" handler={MapSearch} />
+    <Route name="map-search/:option/:zipcode" handler={MapSearch} />
     <Route name="user/:id" handler={UserProfile} />
     <Route name="user/:id/edit" handler={EditUserProfile} />
   </Route>
