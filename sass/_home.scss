@@ -103,13 +103,13 @@
     text-align: center;
 
     #search-info, #profile-info {
-      width: 350px;
+      width: 425px;
       display: inline-block;
       vertical-align: top;
     }
 
     #search-info {
-      margin-right: 100px;
+      margin-right: 50px;
     }
 
     #profile-info {
@@ -118,16 +118,19 @@
 
     h4 {
       margin: 0;
+      font-size: 22px;
     }
 
     p {
       text-align: left;
+      font-size: 20px;
+      margin-top: 3px;
     }
     
     .info {
       font-size: 50px;
       float: left;
-      height: 100px;
+      height: 175px;
 
       &.search-icon {
         color: $basicBlue;

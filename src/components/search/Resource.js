@@ -1,9 +1,19 @@
-var React = require('react');
+var 
+  React = require('react'),
+  $ = require('jquery');
 
 var Resource = React.createClass({
   handleClick: function() {
-    console.log('clicked: ' + this.props.name);
-    console.log('user: ' + User.first_name);
+    var savedResource = [];
+    savedResource.push(this.props.id);
+
+    $.ajax({
+      traditional: true,
+      url: 'http://localhost:3000/users/' + User.id,
+      dataType: 'JSON',
+      type: 'PUT',
+      data: {saved_resources: savedResource}
+    })
   },
 
   checkLogin: function() {

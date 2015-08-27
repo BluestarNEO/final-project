@@ -3,42 +3,63 @@ var
   $     = require('jquery'),
   _     = require('lodash');
 
+var _resources = [];
 
 var UserProfileRight = React.createClass({
+  getInitialState: function() {
+    return {
+      resources: ''
+    }
+  },
+
+  componentDidMount: function() {
+
+    $.get('http://localhost:3000/resources', function(resources) {
+        if (this.isMounted()) {
+          this.setState({
+            resources: resources
+          });
+        };
+      }.bind(this));
+  },
 
   render: function() {
-    var resourceId;
-    var resourceName;
-    var resourceSite;
-    var resourceAddress;
-    var resourcePhone;
-    var resourceServices;
+    var _resources = [];
+    console.log(this.props.user)
 
-    if (this.props.user === null) {
-      console.log(this.props.user);
+    if(this.props.user == null) {
+      console.log('twas null')
     } else {
-      var userInfo = this.props.user;
-      var _handleClick = this.handleClick;
-      var resourceNames = userInfo.saved_resources;
-      var resources = [];
+      var userResources = this.props.user.saved_resources;
+      var stateResources = this.state.resources;
+      _.forEach(stateResources, function(resource, index) {
+        // _.forEach(userResources, function(userResource, _index) {
+          if(userResources == resource.id) {
+            var resourceId = resource;
+            var resourceName = resource.name;
+            var resourceSite = resource.website;
+            var resourceAddress = resource.contact.street_address + ', ' + resource.contact.city + ', ' + resource.contact.state + ' ' + resource.contact.zip_code;
+            var resourcePhone = resource.contact.phone;
+            var resourceServices = resource.services;
 
-      _.forEach(resourceNames, function(n, index) {
-        resourceId = n.id
-        resourceName = n.name;
-        resourceSite = n.website;
-        resourceAddress = n.contact.street_address + ', ' + n.contact.city + ', ' + n.contact.state + ' ' + n.contact.zip_code;
-        resourcePhone = n.contact.phone;
-        resourceServices = n.services;
-
-        resources.push(<div className="resource-info" id={index}><h4><strong>Name:</strong> {resourceName}</h4><h4><strong>Website:</strong> <a href={resourceSite}>{resourceSite}</a></h4><h4><strong>Address:</strong> {resourceAddress}</h4><h4><strong>Phone:</strong> {resourcePhone}</h4><h4><strong>Services:</strong> {resourceServices.join(', ')}</h4><div className="delete-icon" id={index}><i className="fa fa-times"></i></div></div>);
-        console.log('this: ' + this);
-      });
+            _resources.push(
+              <div className="resource-info">
+                <h4><strong>Name:</strong> {resourceName}</h4>
+                <h4><strong>Website:</strong> <a href={resourceSite}>{resourceSite}</a></h4>
+                <h4><strong>Address:</strong> {resourceAddress}</h4>
+                <h4><strong>Phone:</strong> {resourcePhone}</h4>
+                <h4><strong>Services:</strong> {resourceServices.join(', ')}</h4>
+              </div>);
+          }
+        // })
+      })
     }
-
+    
+    console.log('what is this? ' + _resources);
     return(
       <div>
         <div className="profile-resources">
-          {resources}
+          {_resources}
         </div>  
       </div>
     );

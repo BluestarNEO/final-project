@@ -10,60 +10,7 @@
         "admin": false,
         "user": true
       },
-      "saved_resources": [
-        {
-          "id": 20151,
-          "name": "CPLC Parenting Arizona",
-          "subtext": "Home Visitation, Parenting Classes, and Parent Aide Services",
-          "website": "http://www.parentingaz.org",
-          "contact": {
-            "street_address": "6741 N. 7th St.",
-            "city": "Phoenix",
-            "state": "AZ",
-            "zip_code": "85014",
-            "phone": "602-248-0428 x221"
-          },
-          "map": true,
-          "summary": "All Programs are offered in English and Spanish. The Home Visitation program is for families with children ages birth to 3 years old. The program focuses on child health and development, parenting skills, and linkage to community resources. Parenting classes are open to families with children ages birth to 18 years old. The focus is on strengthening parenting skills and linkage to community resources. School Choice links families with high quality schools in their area and educates families on the importance of finding the right school for their child.",
-          "services": [
-            "Home Visitation",
-            "Parenting Classes",
-            "Parent Aide Services"
-          ]
-        },
-        {
-          "id": 20154,
-          "name": "Arizona Department of Education",
-          "subtext": "Raising Special Kids",
-          "website": "http://www.raisingspecialkids.org/",
-          "contact": {
-            "street_address": "5025 E. Washington St. #204",
-            "city": "Phoenix",
-            "state": "AZ",
-            "zip_code": "85034",
-            "phone": "602-242-4366"
-          },
-          "map": true,
-          "summary": "Raising Special Kids is a 501 (c )3 non-profit organization that provides support and information for parents of children, from birth to age 26, with a full range of disabilities and special health care needs. Programs are offered at no cost to families, and are available in English and Spanish.",
-          "services": [
-            "Special Needs"
-          ]
-        }
-      ],
-      "user_level[admin]": false,
-      "user_level[user]": true,
-      "saved_resources[0][id]": 20154,
-      "saved_resources[0][name]": "Arizona Department of Education",
-      "saved_resources[0][subtext]": "Raising Special Kids",
-      "saved_resources[0][website]": "http://www.raisingspecialkids.org/",
-      "saved_resources[0][contact][street_address]": "5025 E. Washington St. #204",
-      "saved_resources[0][contact][city]": "Phoenix",
-      "saved_resources[0][contact][state]": "AZ",
-      "saved_resources[0][contact][zip_code]": 85034,
-      "saved_resources[0][contact][phone]": "602-242-4366",
-      "saved_resources[0][map]": true,
-      "saved_resources[0][summary]": "Raising Special Kids is a 501 (c )3 non-profit organization that provides support and information for parents of children, from birth to age 26, with a full range of disabilities and special health care needs. Programs are offered at no cost to families, and are available in English and Spanish.",
-      "saved_resources[0][services][]": "Special Needs"
+      "saved_resources": 20151
     },
     {
       "id": 2,

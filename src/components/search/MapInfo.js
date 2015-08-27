@@ -19,6 +19,7 @@ var MapInfo = React.createClass({
             return (
               <Resource
                 key={index}
+                id={resource.id}
                 name={resource.name}
                 subtext={resource.subtext}
                 website={resource.website}
@@ -34,6 +35,7 @@ var MapInfo = React.createClass({
           return (
             <Resource
               key={index}
+              id={resource.id}
               name={resource.name}
               subtext={resource.subtext}
               website={resource.website}

@@ -2546,21 +2546,24 @@ select {
   #info-section #primary-info {
     text-align: center; }
     #info-section #primary-info #search-info, #info-section #primary-info #profile-info {
-      width: 350px;
+      width: 425px;
       display: inline-block;
       vertical-align: top; }
     #info-section #primary-info #search-info {
-      margin-right: 100px; }
+      margin-right: 50px; }
     #info-section #primary-info #profile-info {
       margin-left: 50px; }
     #info-section #primary-info h4 {
-      margin: 0; }
+      margin: 0;
+      font-size: 22px; }
     #info-section #primary-info p {
-      text-align: left; }
+      text-align: left;
+      font-size: 20px;
+      margin-top: 3px; }
     #info-section #primary-info .info {
       font-size: 50px;
       float: left;
-      height: 100px; }
+      height: 175px; }
       #info-section #primary-info .info.search-icon {
         color: #3d8af7;
         padding-right: 10px; }

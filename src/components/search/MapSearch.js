@@ -78,10 +78,6 @@ var MapSearch = React.createClass({
   },
 
   render: function() {
-    console.log('params: ' + this.props.params.zipcode)
-    console.log('resource: ' + this.state.resource);
-    console.log('user: ' + User.first_name);
-
     return (
       <div>
         <div id="map">

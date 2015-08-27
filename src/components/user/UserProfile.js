@@ -23,7 +23,6 @@ UserProfile = React.createClass({
     $.get('http://localhost:3000/users', function(results) {
       if (this.isMounted()) {
         var user = _.find(results, {"id": id});
-        console.log('user!: ' + user);
         this.setState({
           user: user
         })
@@ -32,12 +31,12 @@ UserProfile = React.createClass({
   },
 
   render: function() {
+    console.log('test: ' + User.first_name);
+
     if (this.props.userId) {
       var id = this.props.userId;
-      console.log('UserId: ' + this.state.user)
     } else {
       var id = this.props.params.id;
-      console.log('Params: ' + this.state.user)
     }
 
     return (
